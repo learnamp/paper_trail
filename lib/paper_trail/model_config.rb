@@ -160,8 +160,7 @@ module PaperTrail
           format(
             DPR_CLASS_NAME_OPTION,
             class_name: options[:class_name].inspect
-          ),
-          caller(1)
+          )
         )
         options[:versions][:class_name] = options[:class_name]
       end
@@ -196,8 +195,7 @@ module PaperTrail
             format(
               DPR_PASSING_ASSOC_NAME_DIRECTLY_TO_VERSIONS_OPTION,
               versions_name: options[:versions].inspect
-            ),
-            caller(1)
+            )
           )
         end
         options[:versions] = {
